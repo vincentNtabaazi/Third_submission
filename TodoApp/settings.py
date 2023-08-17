@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 
 import os
+import sys
 from pathlib import Path
 
 
@@ -26,7 +27,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-d3y6uk*l$c=$v$sx+oa#(8hry_-f+21%af3cuvl6ml%m96(6l#"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
+if (len(sys.argv) >= 2 and sys.argv[1] == 'runserver'):
+    DEBUG = True
+else:
+    DEBUG = False
 
 CSRF_TRUSTED_ORIGINS = ['https://web-production-4523d.up.railway.app']
 ALLOWED_HOSTS = ["*"]
