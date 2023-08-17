@@ -34,7 +34,8 @@ DEBUG = False
 # else:
 #     DEBUG = False
 
-CSRF_TRUSTED_ORIGINS = ['https://web-production-4523d.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://web-production-c410.up.railway.app/']
+
 ALLOWED_HOSTS = ["*"]
 
 
