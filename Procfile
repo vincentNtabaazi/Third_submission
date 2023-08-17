@@ -1,2 +1,2 @@
-web: gunicorn TodoApp.wsgi --log-file --
+web: gunicorn TodoApp.wsgi
 web: python manage.py collectstatic --noinput
