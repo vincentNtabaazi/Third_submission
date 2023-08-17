@@ -28,7 +28,7 @@ SECRET_KEY = "django-insecure-d3y6uk*l$c=$v$sx+oa#(8hry_-f+21%af3cuvl6ml%m96(6l#
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = True
+DEBUG = False
 # if (len(sys.argv) >= 2 and sys.argv[1] == 'runserver'):
 #     DEBUG = True
 # else:
