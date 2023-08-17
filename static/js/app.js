@@ -2,7 +2,7 @@
 checkButtonList = document.querySelectorAll(".complete-btn");
 listTotal = document.querySelectorAll(".outer-todo-item");
 // listeners
-if(window.location.href === 'http://127.0.0.1:8000/new_todo/') {
+if(window.location.href === '${window.location.origin}/new_todo/') {
   document.addEventListener('DOMContentLoaded', move())
 }
 document.addEventListener('DOMContentLoaded', function (e) {
